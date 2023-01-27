@@ -14,7 +14,7 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-// GET POSTS
+// Get posts
 router.route('/').get(async (req, res) => {
   try {
     const posts = await Post.find({});
@@ -27,8 +27,8 @@ router.route('/').get(async (req, res) => {
   }
 });
 
-// CREATE POST
-router.route('/').get(async (req, res) => {
+// Create post
+router.route('/').post(async (req, res) => {
   try {
     const { name, prompt, photo } = req.body;
     const photoURL = await cloudinary.uploader.upload(photo);
