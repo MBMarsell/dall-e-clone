@@ -48,7 +48,7 @@ const CreatePost = () => {
             labelName="Prompt"
             type="text"
             name="prompt"
-            placeholder="Super Mario experiencing hallucinations after having too many shrooms"
+            placeholder="'Super Mario experiencing hallucinations after having too many shrooms'"
             value={form.prompt}
             handleChange={handleChange}
             isSurpriseMe
