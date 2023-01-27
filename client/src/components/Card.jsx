@@ -18,7 +18,7 @@ const Card = ({ _id, name, prompt, photo }) => {
             <div className="w-7 h-7 rounded-full object-cover bg-orange-700 flex justify-center items-center text-white text-xs font-bold">
               {name[0]}
             </div>
-            <p className="text- white text-sm">{name}</p>
+            <p className="text-white text-sm">{name}</p>
           </div>
           <button
             type="button"
